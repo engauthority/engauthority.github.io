@@ -1,0 +1,184 @@
+/* Customize the bootstrapiso area */
+.bootstrapiso {
+  background: rgba(255, 255, 255, 0) !important;
+}
+
+/* From https://www.florin-pop.com/blog/2019/03/css-pulse-effect/ */
+/* Creates a pulsing ball */
+.pulsar {
+  /** New: we will vary the coloring between sites, but the
+      other settings will stay the same */
+  /* background: rgba(16, 96, 236, 1); */
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+
+  /* box-shadow: 0 0 0 0 rgba(16, 96, 236, 1); */
+  transform: scale(1);
+  /* animation: pulse 3s infinite; */
+}
+.pulsar.engauthority {
+  /* This site's chief color is #21bc65 */
+  background: rgba(33, 188, 101, 1);
+  box-shadow: 0 0 0 0 rgba(33, 188, 101, 1);
+  animation: pulse_engauthority 3s infinite;
+}
+.pulsar.uplevel {
+  /* This site's chief color is #0097ee */
+  background: rgba(0, 151, 238, 1);
+  box-shadow: 0 0 0 0 rgba(0, 151, 238, 1);
+  animation: pulse_uplevel 3s infinite;
+}
+.pulsar.classic {
+  /* For classic PA colors, which are
+     standardized and known to look good */
+  background: rgba(16, 96, 236, 1);
+  box-shadow: 0 0 0 0 rgba(16, 96, 236, 1);
+  animation: pulse_classic 3s infinite;
+}
+
+/* Animations for the pulsar */
+@keyframes pulse_engauthority {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(33, 188, 101, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 1rem rgba(33, 188, 101, 0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(33, 188, 101, 0);
+  }
+}
+
+@keyframes pulse_uplevel {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 151, 238, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 1rem rgba(0, 151, 238, 0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 151, 238, 0);
+  }
+}
+
+@keyframes pulse_classic {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(16, 96, 236, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 1rem rgba(16, 96, 236, 0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(16, 96, 236, 0);
+  }
+}
+
+
+/** Misc styling **/
+.toast {
+  min-width: 420px;
+  border-radius: 9999px !important;
+
+  /* Inherit Product Alliance font */
+  font-family: Inter, sans-serif;
+}
+
+.toast a:hover {
+  text-decoration: underline;
+  opacity: 100%;
+}
+
+.toast-icon {
+  font-size: 1.5rem;
+}
+
+.toast-separator {
+  line-height: 60%;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+#toast-wrapper {
+  z-index: 999;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 1rem;
+}
+
+.toast-body.engauthority strong {
+  color: rgba(33, 188, 101, 1);
+}
+.toast-body.uplevel strong {
+  color: rgba(0, 151, 238, 1);
+}
+.toast-body.classic strong {
+  color: rgba(16, 96, 236, 1);
+}
+
+.arrow-button {
+  color: rgba(16, 96, 236, 1);
+  font-size: 1.8rem;
+
+  /* Make it sorta horizontally centered */
+  position: relative;
+  left: -0.6rem;
+}
+
+.cta-separator {
+  line-height: 50%;
+}
+
+.toast-body {
+  position: relative;
+}
+
+.toast-closer {
+  position: absolute;
+  top: 0.75rem;
+  right: 2.25rem;
+}
+
+.toast-clickable:hover {
+  /* background-color: #ECECED !important; */
+}
+
+.toast-a {
+  display: block;
+  margin: 0.75rem 0;
+}
+
+.toast-a:hover {
+  text-decoration: none;
+}
+
+.toast-text {
+  padding-right: 0.4em !important;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.dismiss-x {
+  padding-left: 0.25em !important;
+}
