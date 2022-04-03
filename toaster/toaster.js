@@ -67,19 +67,21 @@ $(function () {
 /** Constants **/
 const CheckoutPages = {
   UPLEVEL: "https://course.productalliance.com/offers/oxK3u8jm/checkout",
-  // The normal EA checkout page
-  ENGAUTHORITY: "https://course.engauthority.com/offers/6m8pnaBY/checkout",
+  // The normal EA checkout page. NOTE: it's good to use affiliate links 
+  // (with /a/) so that other users' affiliate codes don't get left 
+  // over and trigger. If they do, we have to pay them out.
+  ENGAUTHORITY: "https://course.engauthority.com/a/2147503465/2xkVrGSJ",
   // The variant of the EngAuthority checkout page that highlights the
   // iPad offer
-  EA_IPAD: "https://course.engauthority.com/offers/LvoqAHBS/checkout",
+  EA_IPAD: "https://course.engauthority.com/a/2147503464/2xkVrGSJ",
   // This variant is for the iPhone offer
-  EA_IPHONE: "https://course.engauthority.com/offers/WUXbz2HE/checkout",
+  EA_IPHONE: "https://course.engauthority.com/a/2147503622/2xkVrGSJ",
 
 
-  // Company-specific EA checkouts
-  EA_ORACLE_IPAD: "https://course.engauthority.com/offers/k6djLw3o",
-  EA_PAYPAL_IPAD: "https://course.engauthority.com/offers/S3LefkgZ",
-  EA_CK_IPAD: "https://course.engauthority.com/offers/u2Cd2tqe",
+  // Company- and gift-specific EA checkouts
+  EA_ORACLE_IPAD: "https://course.engauthority.com/a/2147508612/2xkVrGSJ",
+  EA_PAYPAL_IPAD: "https://course.engauthority.com/a/2147508613/2xkVrGSJ",
+  EA_CK_IPAD: "https://course.engauthority.com/a/2147508614/2xkVrGSJ",
 };
 
 // List of domains we could be on, one per course. We set it up so that
@@ -531,7 +533,7 @@ function makeCompanyPromoToasts(companyName, giftName, numSales, checkoutURL) {
   return [
     // Keep it simple and just show one annoying toast
     {
-      "time": 8000,
+      "time": 6000,
       "duration": 0, // Make it persistent
       "text": `${numSales} ${companyName} SWEs enrolled in Eng Authority and got their <strong>${giftName}</strong>.`,
       // "ctaURL": checkoutURL,
