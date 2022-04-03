@@ -102,7 +102,7 @@ window.g_analytics = {
   // EngAuthority: sales of the course and downloads of the reimbursement
   // request / expense report template
   engauthority_sales: getRand("eas", 22, 32),
-  engauthority_downloads: getRand("ead", 60, 110),
+  engauthority_downloads: getRand("ead", 70, 120),
 
   // We also need to show some fake sales numbers for the iPad and iPhone
   // promos. These are based off the overall sales numbers, just scaled down.

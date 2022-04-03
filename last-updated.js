@@ -14,7 +14,7 @@
   Rounds a float down to the int just below it; same thing as truncation.
 */
 function floor(float) {
-    return float | 0;
+  return float | 0;
 }
 
 /**
@@ -23,7 +23,7 @@ function floor(float) {
   wrap it in this function call.
 */
 function identity(n) {
-    return n;
+  return n;
 }
 
 
@@ -34,15 +34,15 @@ function identity(n) {
   if you just use `new Date()` directly there.
 */
 function createDate(parameter) {
-    return new Date(parameter);
+  return new Date(parameter);
 }
 
 /**
  * Given a Date, returns another Date representing the last day of that month.
  */
 function getLastDayOfMonth(date) {
-    // From https://stackoverflow.com/a/13773408 
-    return new Date(date.getFullYear(), date.getMonth() + 1, 0);
+  // From https://stackoverflow.com/a/13773408 
+  return new Date(date.getFullYear(), date.getMonth() + 1, 0);
 }
 
 
@@ -54,27 +54,27 @@ function getLastDayOfMonth(date) {
 
 // All the divs that contain the "promotion ends on" date will be of this class 
 $(".promo-fine-print").text(function () {
-    // Get the current text in this div 
-    const currentText = $(this).text();
+  // Get the current text in this div 
+  const currentText = $(this).text();
 
-    // We will need to replace "Offer expires at end of month" with "Offer expires on MM/DD/YY".
-    // First we'll need to compute this new date. It's the end of the current month. 
-    const today = new Date();
-    const lastDayOfMonth = getLastDayOfMonth(today);
+  // We will need to replace "Offer expires at end of month" with "Offer expires on MM/DD/YY".
+  // First we'll need to compute this new date. It's the end of the current month. 
+  const today = new Date();
+  const lastDayOfMonth = getLastDayOfMonth(today);
 
-    // Format this date as a string: MM/DD/YY
-    const stringDate = new Intl.DateTimeFormat('en-US', {
-        // Formatting options 
-        month: "numeric",
-        day: "numeric",
-        year: "2-digit",
-    }).format(lastDayOfMonth);
+  // Format this date as a string: MM/DD/YY
+  const stringDate = new Intl.DateTimeFormat('en-US', {
+    // Formatting options 
+    month: "numeric",
+    day: "numeric",
+    year: "2-digit",
+  }).format(lastDayOfMonth);
 
-    // Now we can replace the text "at end of month" with this 
-    const newText = currentText.replace(/at end of month/i, "on " + stringDate);
+  // Now we can replace the text "at end of month" with this 
+  const newText = currentText.replace(/at end of month/i, "on " + stringDate);
 
-    // And put it in 
-    return newText;
+  // And put it in 
+  return newText;
 });
 
 
