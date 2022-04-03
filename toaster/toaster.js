@@ -1,4 +1,4 @@
-$(function(){
+$(function () {
 
   // Create absolutely-positioned element to store toasts
   // also try to isolate bootstrap with .bootstrapiso
@@ -30,7 +30,7 @@ $(function(){
   FOMO_CONFIG.forEach((configObject) => {
     // See if it matches the URL
     if (!hasMatched &&
-        configObject.pageRegex.test(window.location.href)) {
+      configObject.pageRegex.test(window.location.href)) {
       // console.log("MATCHED", configObject);
       // Loop through the toasts
       configObject.toasts.forEach(async (toastInfo) => {
@@ -42,7 +42,7 @@ $(function(){
         //   window.location.href.indexOf("webflow.io") > -1;
         // NEW: you're in prod as long as you're on HTTP(S) (not file://)
         let inProd = window.location.href.indexOf("http") > -1;
-        let delayMultiplier = inProd ? 1 : 1/10;
+        let delayMultiplier = inProd ? 1 : 1 / 10;
         await delay(toastInfo.time * delayMultiplier);
 
         // Now create and show
@@ -51,6 +51,7 @@ $(function(){
           ctaURL: toastInfo.ctaURL,
           icon: toastInfo.icon,
           duration: toastInfo.duration,
+          timeframe: toastInfo.timeframe || "the last 24 hours",
         });
       });
 
@@ -65,14 +66,20 @@ $(function(){
 
 /** Constants **/
 const CheckoutPages = {
-  UPLEVEL:        "https://course.productalliance.com/offers/oxK3u8jm/checkout",
+  UPLEVEL: "https://course.productalliance.com/offers/oxK3u8jm/checkout",
   // The normal EA checkout page
-  ENGAUTHORITY:   "https://course.engauthority.com/offers/6m8pnaBY/checkout",
+  ENGAUTHORITY: "https://course.engauthority.com/offers/6m8pnaBY/checkout",
   // The variant of the EngAuthority checkout page that highlights the
   // iPad offer
-  EA_IPAD:        "https://course.engauthority.com/offers/LvoqAHBS/checkout",
+  EA_IPAD: "https://course.engauthority.com/offers/LvoqAHBS/checkout",
   // This variant is for the iPhone offer
-  EA_IPHONE:      "https://course.engauthority.com/offers/WUXbz2HE/checkout",
+  EA_IPHONE: "https://course.engauthority.com/offers/WUXbz2HE/checkout",
+
+
+  // Company-specific EA checkouts
+  EA_ORACLE_IPAD: "https://course.engauthority.com/offers/k6djLw3o",
+  EA_PAYPAL_IPAD: "https://course.engauthority.com/offers/S3LefkgZ",
+  EA_CK_IPAD: "https://course.engauthority.com/offers/u2Cd2tqe",
 };
 
 // List of domains we could be on, one per course. We set it up so that
@@ -81,14 +88,14 @@ const CheckoutPages = {
 const DomainRegexes = {
   // Work for productuplevel.com or productuplevel.webflow.io
   // (so that that site is an accurate simulation)
-  UPLEVEL:      /productuplevel\./i,
+  UPLEVEL: /productuplevel\./i,
 
   // For EA, we'll have two different setups: one for the iPad promo page, one
   // for everyone else. That promo lives at:
   //  https://www.engauthority.com/promo/20225525
-  EA_IPAD:      /engauthority\..*\/promo\/20225525/i,
+  EA_IPAD: /engauthority\..*\/promo\/20225525/i,
   // Oh and another promo for the iPhone promo
-  EA_IPHONE:    /engauthority\..*\/promo\/48330318/i,
+  EA_IPHONE: /engauthority\..*\/promo\/48330318/i,
   ENGAUTHORITY: /engauthority\./i,
 }
 
@@ -171,7 +178,7 @@ const ICONS = {
 // and asks the user to input their email address.
 // Note that we reference this function name in a "javascript:" link, so
 // be sure to Cmd+F thoroughly to catch all instances of this function name
-function showEmailPopup(){
+function showEmailPopup() {
   // Open the modal...
   $('#webinarpopup').css({ "display": "flex", "opacity": 1 });
   $('.main-popup').css({ "display": "flex", "opacity": 1 });
@@ -228,9 +235,10 @@ function showiPhonePromoPopup() {
 // - ctaURL
 // - icon
 // - duration
+// - hideLast24Hours
 function createAndShowToast(options) {
   // Unbundle options
-  let {messageHTML, ctaURL, icon, duration} = options;
+  let { messageHTML, ctaURL, icon, duration, timeframe } = options;
 
   // Generate a unique ID
   let toastID = "toast-" + Date.now();
@@ -330,7 +338,7 @@ function createAndShowToast(options) {
               </span>
               &middot;
               <span class="small text-muted">
-                in the last 24 hours
+                in ${timeframe}
               </span>
             </div>
           </div>
@@ -367,6 +375,42 @@ function createAndShowToast(options) {
 const FOMO_CONFIG = [
   // For EA, we'll have a more specific one for the ipad offer, and a more
   // generic fallback one for all other pages
+
+  // But before any of that, we'll use the most specific of all: 
+  // a company-specific offer 
+  {
+    // Oracle iPad
+    "pageRegex": /engauthority\..*ipad-pro\/oracle/i,
+    "toasts": makeCompanyPromoToasts(
+      "Oracle",
+      "free, latest-gen iPad Pro",
+      g_analytics.engauthority_oracle_ipad_sales,
+      CheckoutPages.EA_ORACLE_IPAD,
+    )
+  },
+
+  {
+    // PayPal iPad
+    "pageRegex": /engauthority\..*ipad-pro\/paypal/i,
+    "toasts": makeCompanyPromoToasts(
+      "PayPal",
+      "free, latest-gen iPad Pro",
+      g_analytics.engauthority_paypal_ipad_sales,
+      CheckoutPages.EA_PAYPAL_IPAD,
+    )
+  },
+
+  {
+    // Credit Karma iPad
+    "pageRegex": /engauthority\..*ipad-pro\/credit-karma/i,
+    "toasts": makeCompanyPromoToasts(
+      "Credit Karma",
+      "free, latest-gen iPad Pro",
+      g_analytics.engauthority_ck_ipad_sales,
+      CheckoutPages.EA_CK_IPAD,
+    )
+  },
+
   {
     // iPad promo
     "pageRegex": DomainRegexes.EA_IPAD,
@@ -394,6 +438,7 @@ const FOMO_CONFIG = [
       "free iPhone 13 Pro",
     )
   },
+
   {
     // Normal EngAuthority popups
     "pageRegex": DomainRegexes.ENGAUTHORITY,
@@ -480,6 +525,28 @@ function makePromoToasts(numSales, numDownloads, courseName, studentTitles, chec
 
 
 /**
+  Generates toasts advertising a certain gift for a certain company.
+*/
+function makeCompanyPromoToasts(companyName, giftName, numSales, checkoutURL) {
+  return [
+    // Keep it simple and just show one annoying toast
+    {
+      "time": 8000,
+      "duration": 0, // Make it persistent
+      "text": `${numSales} ${companyName} SWEs enrolled in Eng Authority and got their <strong>${giftName}</strong>.`,
+      // "ctaURL": checkoutURL,
+      "ctaURL": "javascript:showiPadPromoPopup()",
+      "icon": ICONS.gift,
+      "timeframe": "the last month",
+    },
+  ]
+}
+
+
+
+
+
+/**
   Returns a CTA URL for webinar upsells.
 */
 function getWebinarCtaURL() {
@@ -488,7 +555,7 @@ function getWebinarCtaURL() {
   // otherwise, just go to the footer, where we have a simpler but omnipresent
   // email-grabber.
   let ctaURL = "#footer";
-  if ($('#webinarpopup').length > 0){
+  if ($('#webinarpopup').length > 0) {
     // the popup exists!
     ctaURL = "javascript:showEmailPopup()";
   }
