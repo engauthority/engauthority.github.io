@@ -120,6 +120,8 @@ window.g_analytics = {
   engauthority_paypal_iphone_sales: getRand("payh", 55, 70),
   engauthority_ck_ipad_sales: getRand("ckd", 25, 35),
   engauthority_ck_iphone_sales: getRand("ckh", 25, 35),
+  engauthority_salesforce_ipad_sales: getRand("sfd", 65, 85),
+  engauthority_salesforce_iphone_sales: getRand("sfh", 65, 85),
 
 
   // UpLevel: same thing
