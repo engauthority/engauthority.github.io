@@ -1,67 +1,3 @@
-$(function () {
-
-  // Create absolutely-positioned element to store toasts
-  // also try to isolate bootstrap with .bootstrapiso
-  // per https://github.com/cryptoapi/Isolate-Bootstrap-4.1-CSS-Themes
-  let toastHolderHTML = `
-    <!-- Position it -->
-    <div id="toast-wrapper"
-      class="bootstrapiso"
-      >
-
-      <!-- This is the real content holder (hidden on small screens) -->
-      <div class="d-none d-lg-block">
-        <!-- Then put toasts within -->
-        <div id="toast-holder"></div>
-      </div>
-    </div>
-  `;
-  $(toastHolderHTML).appendTo("body");
-
-  // This lets us wait X milliseconds synchronously
-  // From https://stackoverflow.com/a/47480429
-  const delay = ms => new Promise(res => setTimeout(res, ms));
-
-  // This will be set to false once we've matched, and that
-  // will let us break out
-  let hasMatched = false;
-
-  // Read FOMO config to figure out what to do
-  FOMO_CONFIG.forEach((configObject) => {
-    // See if it matches the URL
-    if (!hasMatched &&
-      configObject.pageRegex.test(window.location.href)) {
-      // console.log("MATCHED", configObject);
-      // Loop through the toasts
-      configObject.toasts.forEach(async (toastInfo) => {
-        // Wait until we're ready
-        // Cut wait times by 10 if we're not in prod, for easier testing
-        // (also cut it on webflow so it's more authentic)
-        // let inProd = window.location.href.indexOf(ENGAUTHORITY_DOMAIN) > -1 ||
-        //   window.location.href.indexOf(UPLEVEL_DOMAIN) > -1 ||
-        //   window.location.href.indexOf("webflow.io") > -1;
-        // NEW: you're in prod as long as you're on HTTP(S) (not file://)
-        let inProd = window.location.href.indexOf("http") > -1;
-        let delayMultiplier = inProd ? 1 : 1 / 10;
-        await delay(toastInfo.time * delayMultiplier);
-
-        // Now create and show
-        createAndShowToast({
-          messageHTML: toastInfo.text,
-          ctaURL: toastInfo.ctaURL,
-          icon: toastInfo.icon,
-          duration: toastInfo.duration,
-          timeframe: toastInfo.timeframe || "the last 24 hours",
-        });
-      });
-
-      // We will only match one, so let's drop out
-      // (this lets us have a "fallback" default)
-      // console.log(configObject.pageRegex);
-      hasMatched = true;
-    }
-  });
-});
 
 
 /** Constants **/
@@ -447,6 +383,16 @@ const FOMO_CONFIG = [
     )
   },
 
+  // Salesforce 
+  makeCompanyIpadPromoConfig(
+    "salesforce", "Salesforce",
+    g_analytics.engauthority_salesforce_ipad_sales,
+    "https://course.engauthority.com/a/2147508701/2xkVrGSJ"),
+  makeCompanyIphonePromoConfig(
+    "salesforce", "Salesforce",
+    g_analytics.engauthority_salesforce_iphone_sales,
+    "https://course.engauthority.com/a/2147508700/2xkVrGSJ"),
+
 
   {
     // Standard iPad promo
@@ -580,6 +526,38 @@ function makeCompanyPromoToasts(companyName, giftName, numSales, checkoutURL) {
 }
 
 
+/**
+ * Returns a promo config object for the given company's 
+ * iPad promotion.
+ */
+function makeCompanyIpadPromoConfig(companySlug, companyName, numSales, checkoutPage) {
+  return {
+    "pageRegex": new RegExp(`engauthority\..*ipad-pro\/${companySlug}`, "i"),
+    "toasts": makeCompanyPromoToasts(
+      companyName,
+      "free, latest-gen iPad Pro",
+      numSales,
+      checkoutPage,
+    )
+  };
+}
+
+
+/**
+ * Returns a promo config object for the given company's 
+ * iPhone promotion.
+ */
+function makeCompanyIphonePromoConfig(companySlug, companyName, numSales, checkoutPage) {
+  return {
+    "pageRegex": new RegExp(`engauthority\..*iphone-13-pro\/${companySlug}`, "i"),
+    "toasts": makeCompanyPromoToasts(
+      companyName,
+      "free iPhone 13 Pro",
+      numSales,
+      checkoutPage,
+    )
+  };
+}
 
 
 
@@ -599,3 +577,76 @@ function getWebinarCtaURL() {
 
   return ctaURL;
 }
+
+
+
+
+
+/**
+ * Run the code here
+ */
+
+$(function () {
+
+  // Create absolutely-positioned element to store toasts
+  // also try to isolate bootstrap with .bootstrapiso
+  // per https://github.com/cryptoapi/Isolate-Bootstrap-4.1-CSS-Themes
+  let toastHolderHTML = `
+    <!-- Position it -->
+    <div id="toast-wrapper"
+      class="bootstrapiso"
+      >
+
+      <!-- This is the real content holder (hidden on small screens) -->
+      <div class="d-none d-lg-block">
+        <!-- Then put toasts within -->
+        <div id="toast-holder"></div>
+      </div>
+    </div>
+  `;
+  $(toastHolderHTML).appendTo("body");
+
+  // This lets us wait X milliseconds synchronously
+  // From https://stackoverflow.com/a/47480429
+  const delay = ms => new Promise(res => setTimeout(res, ms));
+
+  // This will be set to false once we've matched, and that
+  // will let us break out
+  let hasMatched = false;
+
+  // Read FOMO config to figure out what to do
+  FOMO_CONFIG.forEach((configObject) => {
+    // See if it matches the URL
+    if (!hasMatched &&
+      configObject.pageRegex.test(window.location.href)) {
+      // console.log("MATCHED", configObject);
+      // Loop through the toasts
+      configObject.toasts.forEach(async (toastInfo) => {
+        // Wait until we're ready
+        // Cut wait times by 10 if we're not in prod, for easier testing
+        // (also cut it on webflow so it's more authentic)
+        // let inProd = window.location.href.indexOf(ENGAUTHORITY_DOMAIN) > -1 ||
+        //   window.location.href.indexOf(UPLEVEL_DOMAIN) > -1 ||
+        //   window.location.href.indexOf("webflow.io") > -1;
+        // NEW: you're in prod as long as you're on HTTP(S) (not file://)
+        let inProd = window.location.href.indexOf("http") > -1;
+        let delayMultiplier = inProd ? 1 : 1 / 10;
+        await delay(toastInfo.time * delayMultiplier);
+
+        // Now create and show
+        createAndShowToast({
+          messageHTML: toastInfo.text,
+          ctaURL: toastInfo.ctaURL,
+          icon: toastInfo.icon,
+          duration: toastInfo.duration,
+          timeframe: toastInfo.timeframe || "the last 24 hours",
+        });
+      });
+
+      // We will only match one, so let's drop out
+      // (this lets us have a "fallback" default)
+      // console.log(configObject.pageRegex);
+      hasMatched = true;
+    }
+  });
+});
