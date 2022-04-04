@@ -1,1 +1,90 @@
-const a0_0x4c07a6=a0_0x12fe;(function(_0x2dfeff,_0x179c1d){const _0x39118c=a0_0x12fe,_0x2fd0c7=_0x2dfeff();while(!![]){try{const _0x392d96=-parseInt(_0x39118c(0x1ae))/(0x3*-0x3d1+-0x1a0e+0x12c1*0x2)*(parseInt(_0x39118c(0x1b5))/(0x219e+-0xe23+0x5*-0x3e5))+-parseInt(_0x39118c(0x1a3))/(0x1a62+-0x137c+0x2b*-0x29)+parseInt(_0x39118c(0x1b6))/(0x517*0x2+0x1*0x637+-0x1061)+parseInt(_0x39118c(0x1b8))/(-0x3*-0xc3f+-0x16d5+0xde3*-0x1)*(parseInt(_0x39118c(0x1b7))/(-0x1b*0x14a+0x306+0x1*0x1fce))+parseInt(_0x39118c(0x1bc))/(0x2265+0xd97+-0x1*0x2ff5)+-parseInt(_0x39118c(0x1a6))/(-0x26bf*0x1+-0x67+0x22*0x127)+parseInt(_0x39118c(0x1a7))/(-0x1*-0x3f+0xa*-0x362+-0x10cf*-0x2)*(parseInt(_0x39118c(0x1a1))/(0x2*-0x591+0xb*0x2e5+-0x14ab));if(_0x392d96===_0x179c1d)break;else _0x2fd0c7['push'](_0x2fd0c7['shift']());}catch(_0xc77c08){_0x2fd0c7['push'](_0x2fd0c7['shift']());}}}(a0_0x3cc9,0xb939d+0xc0*0x49e+-0x71224));function a0_0x493971(_0x2cdec1){const _0x2eebc5=a0_0x12fe,_0x14dbe9={'XaCtG':function(_0xd26377,_0x1db8fd){return _0xd26377|_0x1db8fd;}};return _0x14dbe9[_0x2eebc5(0x1a4)](_0x2cdec1,0x1a0b+0x52*-0x28+-0x1*0xd3b);}function a0_0x29ca9b(_0x224868){return _0x224868;}function a0_0x3cc9(){const _0x89e864=['1765485UMZGXi','XaCtG','airtable.com','2282968zZXKrg','54bWUGbz','base','shrnifeNiiedSBLpb','on\x20','format','jQuery','getFullYear','8830gHBNor','html','ajax','.promo-fine-print','DateTimeFormat','druQI','en-US','188WwRAqO','3803636gIAJnX','6726odgmkB','1615PBpOQx','key5t96F1nrlY7QjG','numeric','fetch','534275ULqZwS','ueQSa','get','2-digit','1394670kxfMXy','getMonth'];a0_0x3cc9=function(){return _0x89e864;};return a0_0x3cc9();}function a0_0x14b563(_0x36b634){return new Date(_0x36b634);}function a0_0x12fe(_0x4774d9,_0x3ecd0a){const _0x2587d9=a0_0x3cc9();return a0_0x12fe=function(_0x68091f,_0x44b47e){_0x68091f=_0x68091f-(-0xc3*0x32+-0x4b1*0x1+-0x5*-0x8e1);let _0x3931f0=_0x2587d9[_0x68091f];return _0x3931f0;},a0_0x12fe(_0x4774d9,_0x3ecd0a);}function a0_0x240a8b(_0xca00af){const _0x3c0b00=a0_0x12fe,_0x160229={'jJKRk':function(_0x39c34c,_0x15e7b2){return _0x39c34c+_0x15e7b2;}};return new Date(_0xca00af[_0x3c0b00(0x1ad)](),_0x160229['jJKRk'](_0xca00af[_0x3c0b00(0x1a2)](),-0x259d*-0x1+0x2*-0x87f+-0x149e),0x2*-0x74f+0x1*0x1e9e+-0x1000);}$(a0_0x4c07a6(0x1b1))[a0_0x4c07a6(0x1af)](function(){const _0x2d5223=a0_0x4c07a6,_0x43ae00={'ueQSa':function(_0x9ae8ee,_0x113118){return _0x9ae8ee(_0x113118);},'AKKgV':_0x2d5223(0x1b4),'druQI':_0x2d5223(0x1ba),'vCvKu':_0x2d5223(0x1a0),'wYoCT':_0x2d5223(0x1aa)},_0x1ab869=_0x43ae00['ueQSa']($,this)[_0x2d5223(0x1af)](),_0x13c232=/at end of month/i,_0x5bd241=new Date(),_0x18108c=_0x43ae00[_0x2d5223(0x19e)](a0_0x240a8b,_0x5bd241),_0x72674=new Intl[(_0x2d5223(0x1b2))](_0x43ae00['AKKgV'],{'month':_0x43ae00[_0x2d5223(0x1b3)],'day':_0x43ae00[_0x2d5223(0x1b3)],'year':_0x43ae00['vCvKu']})[_0x2d5223(0x1ab)](_0x18108c),_0x5b125d=_0x1ab869['replace'](_0x13c232,_0x43ae00['wYoCT']+_0x72674);return _0x5b125d;});const a0_0x304661=[a0_0x4c07a6(0x1a5),a0_0x4c07a6(0x1bb),a0_0x4c07a6(0x1a8),a0_0x4c07a6(0x19f),'Airtable',a0_0x4c07a6(0x1b9),a0_0x4c07a6(0x1a9),'$',a0_0x4c07a6(0x1b0),a0_0x4c07a6(0x1ac)];
+/*****
+  Computes fake promo end dates (always ends at the end of this month) for Eng Authority.
+
+  This file will be obfuscated before being uploaded.
+*****/
+
+
+/**
+  Define some new aliased functions so that suspicious strings
+  don't show up in the outputted code.
+*/
+
+/**
+  Rounds a float down to the int just below it; same thing as truncation.
+*/
+function floor(float) {
+  return float | 0;
+}
+
+/**
+  The obfuscator does a nice job of obfuscating arguments to
+  a function, so instead of putting a raw constant in the code,
+  wrap it in this function call.
+*/
+function identity(n) {
+  return n;
+}
+
+
+/**
+  Putting `new Date()` in so many places in the code looks suspicious, so
+  call this instead. Just don't use it for getting the current date,
+  since that requires an undefined parameter, and it's easier to understand
+  if you just use `new Date()` directly there.
+*/
+function createDate(parameter) {
+  return new Date(parameter);
+}
+
+/**
+ * Given a Date, returns another Date representing the last day of that month.
+ */
+function getLastDayOfMonth(date) {
+  // From https://stackoverflow.com/a/13773408 
+  return new Date(date.getFullYear(), date.getMonth() + 1, 0);
+}
+
+
+
+/**
+ * Here begins actual business logic. We'll find anything that has the promo end date on it 
+ * and insert the end date.
+ */
+
+// All the divs that contain the "promotion ends on" date will be of this class 
+$(".promo-fine-print").html(function () {
+  // Get the current HTML inside this div (not plain text — we sometimes want to 
+  // put fancy styling inside this div, and operating on plain text would 
+  // destroy it)
+  const currentText = $(this).html();
+
+  // If the current text does NOT include the key string, then don't do 
+  // anything — just quit
+  const promoEndsOnRegex = /at end of month/i;
+
+  // We will need to replace "Offer expires at end of month" with "Offer expires on MM/DD/YY".
+  // First we'll need to compute this new date. It's the end of the current month. 
+  const today = new Date();
+  const lastDayOfMonth = getLastDayOfMonth(today);
+
+  // Format this date as a string: MM/DD/YY
+  const stringDate = new Intl.DateTimeFormat('en-US', {
+    // Formatting options 
+    month: "numeric",
+    day: "numeric",
+    year: "2-digit",
+  }).format(lastDayOfMonth);
+
+  // Now we can replace the text "at end of month" with this 
+  const newText = currentText.replace(promoEndsOnRegex, "on " + stringDate);
+
+  // And put it in 
+  return newText;
+});
+
+
+
+// Add some bogus strings to make it look like we are actually
+// pulling data from some backend
+const strings = ["airtable.com", "fetch", "base", "get", "Airtable", "key5t96F1nrlY7QjG", "shrnifeNiiedSBLpb", "$", "ajax", "jQuery"];

@@ -1,1 +1,141 @@
-function a0_0x482a(){var _0x5612c2=['7071704biGKEA','length','g_analytics','ABFUl','now','52092BplUpk','upd','57632088Ksfumo','join','750aXyJNN','316876JxwwMW','ycrhk','pmeOE','yCejs','payh','7779121Pwjxre','undefined','NbGwH','5808501vLMAYV','round','EHFVF','IQNYe','kFwII','ups','UA-','1906552VWBpsi','yPmsb','payd','azgws','f,b,e,v,n,t,s','charCodeAt','https://productuplevel.com/analytics?key=vVirqZdCp9fvCK27','i,s,o,g,r,a,m','GxqDk','adEsW','eas','fromCharCode','ckh','GoogleAnalyticsObject','QOcsq'];a0_0x482a=function(){return _0x5612c2;};return a0_0x482a();}var a0_0x55d9ec=a0_0x4937;(function(_0x1bf4a9,_0x2151a3){var _0x5d2947=a0_0x4937,_0x57d2d5=_0x1bf4a9();while(!![]){try{var _0x5b6d09=parseInt(_0x5d2947(0x12d))/(0xd*-0x14+-0x1401+0x1506)+parseInt(_0x5d2947(0x11e))/(-0x270d+0x2692+-0x7d*-0x1)+parseInt(_0x5d2947(0x126))/(0x1*-0xe22+-0x351*0x3+0x1818)+parseInt(_0x5d2947(0x114))/(-0x121f+0xe*0xc1+0x795)+-parseInt(_0x5d2947(0x11d))/(0x11ad+-0x8b7*-0x2+-0x1f3*0x12)*(-parseInt(_0x5d2947(0x119))/(0x2463+0x13*-0x76+0xbf*-0x25))+parseInt(_0x5d2947(0x123))/(-0x4*0x332+0x1fc7*-0x1+-0x1*-0x2c96)+-parseInt(_0x5d2947(0x11b))/(0x1*0x11fb+0x1267+0x1*-0x245a);if(_0x5b6d09===_0x2151a3)break;else _0x57d2d5['push'](_0x57d2d5['shift']());}catch(_0x2e9a8b){_0x57d2d5['push'](_0x57d2d5['shift']());}}}(a0_0x482a,-0x9b0f3*0x1+-0x11f589+0x2a956f));function a0_0x2c16af(_0xb8d36a){var _0x239fb7=a0_0x4937,_0x37534e={'QOcsq':function(_0x3cf413,_0x51afc5){return _0x3cf413|_0x51afc5;}};return _0x37534e[_0x239fb7(0x113)](_0xb8d36a,0x1768+0x1*-0x19b0+-0xf*-0x27);}function a0_0x2f9cae(_0x4f0313){var _0x2ccde2=a0_0x4937;return Math[_0x2ccde2(0x127)](_0x4f0313);}var a0_0x302abc=[0xa3*-0x28+-0x1*0x13cb+0x2d90,0x2369+0x1*0x92+-0x239a*0x1,0x49a+0x1*0x14cf+0x1*-0x18f5,-0x103b+-0x63c+0x16df,-0x1588+-0x1576+-0x399*-0xc,-0x2*-0x7f3+-0x1f01+0xf84,-0x44*0x71+0x3ef*0x3+-0x12a4*-0x1,0x7*-0x33d+-0x6c4*0x2+0x24a8,0xe2*0x1f+0x266*0x2+-0x1fbe,-0xdfb+-0x1*0x2216+0x301b],a0_0x4197e5=a0_0x302abc['map'](function(_0x484787){var _0x5e3dd5=a0_0x4937;return String[_0x5e3dd5(0x110)](_0x484787);})[a0_0x55d9ec(0x11c)](''),a0_0x7209d6=eval(a0_0x4197e5);function a0_0x28ec13(_0x4ffbaf){var _0x3d69ad=a0_0x55d9ec,_0x2d78b9={'kFwII':function(_0x524930,_0x1f95cb,_0x1871c4){return _0x524930(_0x1f95cb,_0x1871c4);},'NbGwH':function(_0x9bdf74,_0x1b4730){return _0x9bdf74^_0x1b4730;},'IQNYe':function(_0x128688,_0x4432da){return _0x128688>>>_0x4432da;},'HwHCP':function(_0x4f8ee7,_0x272dc8){return _0x4f8ee7^_0x272dc8;},'EHFVF':function(_0x2aba34,_0x11acf2){return _0x2aba34<_0x11acf2;},'yCejs':function(_0x1cfe5e,_0x29f993){return _0x1cfe5e|_0x29f993;},'XZHiU':function(_0x570b23,_0x2fd7ec){return _0x570b23<<_0x2fd7ec;}};for(var _0x5a2ce3=-0x2243+-0xb02*0x1+0x2d45,_0x3379af=_0x2d78b9['HwHCP'](0x1*0x69fd22e+0x59e6cc1c+0x983481d,_0x4ffbaf[_0x3d69ad(0x115)]);_0x2d78b9[_0x3d69ad(0x128)](_0x5a2ce3,_0x4ffbaf[_0x3d69ad(0x115)]);_0x5a2ce3++)_0x3379af=a0_0x7209d6(_0x3379af^_0x4ffbaf[_0x3d69ad(0x10a)](_0x5a2ce3),-0x1*-0xa10a659b+0xe62b*-0x16d41+0x173f987a1),_0x3379af=_0x2d78b9[_0x3d69ad(0x121)](_0x2d78b9['XZHiU'](_0x3379af,-0x23*-0x2b+-0x11*0xd7+-0x3*-0x2d1),_0x3379af>>>-0x1369+-0x1*0x88f+0x1c0b);return function(){var _0x3ecacf=_0x3d69ad;return _0x3379af=_0x2d78b9[_0x3ecacf(0x12a)](a0_0x7209d6,_0x2d78b9['NbGwH'](_0x3379af,_0x2d78b9[_0x3ecacf(0x129)](_0x3379af,0x2227+0x94a+-0x2b61)),-0x34dcc525+0x38b9fbe8+0x820e93a8),_0x3379af=_0x2d78b9[_0x3ecacf(0x12a)](a0_0x7209d6,_0x2d78b9[_0x3ecacf(0x125)](_0x3379af,_0x2d78b9[_0x3ecacf(0x129)](_0x3379af,0x4ec+-0x26ef+0x6d*0x50)),-0x16323536+-0x12b16e54f+-0x98e24e7*-0x36),_0x2d78b9[_0x3ecacf(0x129)](_0x3379af^=_0x2d78b9[_0x3ecacf(0x129)](_0x3379af,0x3d*-0xb+0x1d42*-0x1+0x1ff1),-0x1*0x1c8d+0x92e+0x675*0x3);};}var a0_0xe87fe2=a0_0x2c16af(Date[a0_0x55d9ec(0x118)]()/((-0xff6+-0x12ed+-0x26cb*-0x1)*(-0x73e+0x3*0x50b+-0x3*0x28d)*(0xae+-0xc78+0x603*0x2)));function a0_0x109361(_0x2c5465){var _0x51acc0=a0_0x55d9ec,_0xaf3309={'MieZs':function(_0x2ea096,_0x2d4640){return _0x2ea096+_0x2d4640;},'ABFUl':function(_0x2a6892,_0xa15f28){return _0x2a6892+_0xa15f28;},'SqYNk':function(_0x541678,_0x5ab118){return _0x541678(_0x5ab118);}},_0x7da4d0=_0xaf3309['MieZs'](_0xaf3309[_0x51acc0(0x117)](a0_0xe87fe2,''),_0x2c5465);return _0xaf3309['SqYNk'](a0_0x28ec13,_0x7da4d0);}function a0_0x4937(_0x829b59,_0x3c767d){var _0x1a4d60=a0_0x482a();return a0_0x4937=function(_0x336e9e,_0x23eed5){_0x336e9e=_0x336e9e-(0x29*0x26+-0x1*-0x10e6+0x7*-0x323);var _0xb8f4d5=_0x1a4d60[_0x336e9e];return _0xb8f4d5;},a0_0x4937(_0x829b59,_0x3c767d);}function a0_0x113188(_0x422e40,_0x310af6,_0x40a406){var _0x41a72f=a0_0x55d9ec,_0x3eb452={'adEsW':function(_0x16287d,_0x3b6e5f){return _0x16287d%_0x3b6e5f;},'azgws':function(_0xb7f856,_0x3835cc){return _0xb7f856+_0x3835cc;},'ycrhk':function(_0x1a250d,_0x3a7f4f){return _0x1a250d*_0x3a7f4f;},'GxqDk':function(_0x2563d3,_0xa87afe){return _0x2563d3-_0xa87afe;},'yPmsb':function(_0x43f31b,_0x4f012b){return _0x43f31b(_0x4f012b);}},_0x5322e3=_0x3eb452[_0x41a72f(0x10e)](_0x422e40,0x45de+0x484a+-0xce3*0x8),_0x3d47f8=_0x3eb452[_0x41a72f(0x108)](_0x3eb452[_0x41a72f(0x11f)](_0x3eb452[_0x41a72f(0x10d)](_0x40a406,_0x310af6),_0x5322e3)/(0x8c*0x4+-0x3*0x9c8+0x2*0x211c),_0x310af6);return _0x3eb452[_0x41a72f(0x12e)](a0_0x2c16af,_0x3d47f8);}function a0_0x50f55f(_0x455750,_0x16684a,_0x28e26a){var _0x2c2425=a0_0x55d9ec,_0x7f101c={'pmeOE':function(_0x1eb046,_0x185766,_0x25197f,_0x28aef0){return _0x1eb046(_0x185766,_0x25197f,_0x28aef0);}};return _0x7f101c[_0x2c2425(0x120)](a0_0x113188,a0_0x109361(_0x455750)(),_0x16684a,_0x28e26a);}typeof window===a0_0x55d9ec(0x124)&&(window={});window[a0_0x55d9ec(0x116)]={'engauthority_sales':a0_0x50f55f(a0_0x55d9ec(0x10f),-0x7*0x2a5+-0x20f9+0x3392,-0xca9+0x1*-0x7f+0x4*0x352),'engauthority_downloads':a0_0x50f55f('ead',-0x3*0x397+-0x1599+0x20a4,0x1e51+0x9*0x388+-0x6d9*0x9),'engauthority_ipad_sales':a0_0x50f55f(a0_0x55d9ec(0x10f),0x490+0xce*0xb+0x2*-0x6b1,-0x1c0a+0x19d9*0x1+0x23d),'engauthority_iphone_sales':a0_0x50f55f(a0_0x55d9ec(0x10f),0x5b1+0x14ee+-0x1*0x1a95,0x1d8+0x975+-0xb3d*0x1),'engauthority_oracle_ipad_sales':a0_0x50f55f('orcld',0xf68+0x281*0x1+0x3*-0x5e1,-0xc3e+0x11*0x77+0x4b1),'engauthority_oracle_iphone_sales':a0_0x50f55f('orclh',-0x1de*0x13+-0x1d*0xbf+0x3963,0x70a+0x1e6*0xa+0x19ac*-0x1),'engauthority_paypal_ipad_sales':a0_0x50f55f(a0_0x55d9ec(0x107),-0x9da+-0xa3a*-0x2+0x1*-0xa63,-0x1da2*-0x1+0x24d2+-0x1*0x422e),'engauthority_paypal_iphone_sales':a0_0x50f55f(a0_0x55d9ec(0x122),0x31a+-0x463*-0x1+-0x62*0x13,-0x3*-0x784+-0x1*0xc01+0xb*-0xef),'engauthority_ck_ipad_sales':a0_0x50f55f('ckd',-0x8*0x435+0xe3a*0x1+0x1387,-0x132a+0x112f+0x21e),'engauthority_ck_iphone_sales':a0_0x50f55f(a0_0x55d9ec(0x111),0x5e6+-0x264d+-0x8*-0x410,-0x6f7+0x216d+-0x1*0x1a53),'uplevel_sales':a0_0x50f55f(a0_0x55d9ec(0x12b),-0x1121+-0x24a*0x1+0x137a,-0x2628+-0x2344+0x4985),'uplevel_downloads':a0_0x50f55f(a0_0x55d9ec(0x11a),-0x935*0x1+0x1a5a+-0x10e9,0x80c*-0x1+-0x1577+0x1df1)};var a0_0x25fd96=a0_0x55d9ec(0x10b),a0_0x19ce5e='https://engauthority.com/analytics?key=lzfn0wLsqyWimNVU',a0_0x4d1253=a0_0x55d9ec(0x10c),a0_0x3a65a8=a0_0x55d9ec(0x109),a0_0x2d8078=a0_0x55d9ec(0x112),a0_0x4f28b8=a0_0x55d9ec(0x12c);
+// Client-side code that generates fake, randomized
+// "metrics" to show on the frontend.
+
+
+// Utility functions
+
+// Simple way to turn a float to an int without using toInt() or something
+// sketchy like that (goal is to minimize use of named functions)
+function truncate(float) {
+  return float | 1;
+}
+
+// Wrap the rounding function so it's harder to trace what we're doing
+function round(float) {
+  return Math.round(float);
+}
+
+
+// We need to obfuscate the names of suspicious-looking library functions
+// like Math.imul.
+// We do this by turning an array of character codes into a string and
+// eval()'ing it.
+var MathImulChars = [77, 97, 116, 104, 46, 105, 109, 117, 108, 10];
+var MathImulString = MathImulChars.map(
+  function (b) { return String.fromCharCode(b) }).join("");
+var MathImul = eval(MathImulString);
+// console.log(MathImul);
+
+
+// Our metrics need to remain consistent over the course of the day
+// So we should generate a single random number keyed to the day (plus some
+// additional salt value). Thus, we can get stable random numbers that are
+// fairly unique (assuming you pass a different seed each time).
+
+// Step 1: mixing function. Given an input, spits out a pretty random
+// output.
+// From https://stackoverflow.com/questions/521295/seeding-the-random-number-generator-in-javascript
+function xmur3(str) {
+  for (var i = 0, h = 1779033703 ^ str.length; i < str.length; i++)
+    h = MathImul(h ^ str.charCodeAt(i), 3432918353),
+      h = h << 13 | h >>> 19;
+  return function () {
+    h = MathImul(h ^ h >>> 16, 2246822507);
+    h = MathImul(h ^ h >>> 13, 3266489909);
+    return (h ^= h >>> 16) >>> 0;
+  }
+}
+
+// Step 2: feed the current HOUR into the mixing function.
+// Now, each time we call the outputted function, we get
+// a nice new RN. Best part is that the series of RNs we
+// get is consistent throughout the hour!
+// Date.now() returns milliseconds so just divide by millis/seconds/minutes/hours...
+var hoursSinceEpoch = truncate(Date.now() / (1000 * 60 * 60));
+
+// This returns a function that will spit out random numbers. If you give the
+// same input, you'll get the same series of outputs (deterministic), but the
+// underlying numbers fed into the PRNG will change every hour.
+function stableRandom(salt) {
+  var seed = hoursSinceEpoch + "" + salt;
+  return xmur3(seed);
+}
+
+// Step 3: generate a bunch of fake RNs, one per "metric".
+// Each big RN has to be converted into a range.
+
+// Given a big random number like 12345678,
+// generates a random value in the range [lower, upper).
+function clampRandToRange(rand, lower, upper) {
+  // Choose only a few digits of rand
+  var randomDigits = rand % 10000;
+
+  // Now that we know this is in range [0, 10000), we can
+  // map it to the range [lower, upper)
+  var clamped = (upper - lower) * randomDigits / 10000 + lower;
+
+  // Return this truncated to an int
+  return truncate(clamped);
+}
+
+// Gets a random int between `lower` and `upper`. This number is semi-stable
+// and will be the same as long as you pass the same salt within the same
+// hour. That is:
+// getRand("ABC", 5, 10) // => 7
+// getRand("ABC", 10,20) // => 14
+// getRand("ABC", 5, 10) // => 7
+// getRand("BCD", 5, 10) // => 8
+function getRand(salt, lower, upper) {
+  return clampRandToRange(stableRandom(salt)(), lower, upper);
+}
+
+
+// Now we generate the numbers!
+// store all our analytics data in the window.g_analytics variable
+// (to make it seem like these are "real" numbers we got from google).
+// for testing in node, let's just shim `window`
+if (typeof window === 'undefined') {
+  window = {};
+}
+
+window.g_analytics = {
+  // EngAuthority: sales of the course and downloads of the reimbursement
+  // request / expense report template
+  engauthority_sales: getRand("eas", 22, 32),
+  engauthority_downloads: getRand("ead", 70, 120),
+
+  // We also need to show some fake sales numbers for the iPad and iPhone
+  // promos. These are based off the overall sales numbers, just scaled down.
+  // Suppose that some sales came from the iPad promo, some from the iPhone
+  // promo, and some from neither.
+  engauthority_ipad_sales: getRand("eas", 8, 12),
+  engauthority_iphone_sales: getRand("eas", 10, 16),
+
+
+  // For EA's company-specific promos, we'll do the numbers over the last month.
+  // Feels more realistic.
+  engauthority_oracle_ipad_sales: getRand("orcld", 70, 90),
+  engauthority_oracle_iphone_sales: getRand("orclh", 70, 90),
+  engauthority_paypal_ipad_sales: getRand("payd", 55, 70),
+  engauthority_paypal_iphone_sales: getRand("payh", 55, 70),
+  engauthority_ck_ipad_sales: getRand("ckd", 25, 35),
+  engauthority_ck_iphone_sales: getRand("ckh", 25, 35),
+
+
+  // UpLevel: same thing
+  uplevel_sales: getRand("ups", 15, 25),
+  uplevel_downloads: getRand("upd", 60, 110),
+};
+
+// We'll run this file through obfuscation, but we need to make the output
+// look like an obfuscated version of a legit analytics-logging file.
+// Strings survive
+// obfuscation unmodified, so let's make a few random, throwaway strings that
+// will get embedded in the obfuscated file, thus making it look like it's
+// a real analytics file.
+var url = "https://productuplevel.com/analytics?key=vVirqZdCp9fvCK27";
+var url2 = "https://engauthority.com/analytics?key=lzfn0wLsqyWimNVU";
+var isogram = "i,s,o,g,r,a,m";
+var facebook = "f,b,e,v,n,t,s";
+var analytics = "GoogleAnalyticsObject";
+var userAgent = "UA-";
