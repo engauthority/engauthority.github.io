@@ -82,6 +82,10 @@ const CheckoutPages = {
   EA_ORACLE_IPAD: "https://course.engauthority.com/a/2147508612/2xkVrGSJ",
   EA_PAYPAL_IPAD: "https://course.engauthority.com/a/2147508613/2xkVrGSJ",
   EA_CK_IPAD: "https://course.engauthority.com/a/2147508614/2xkVrGSJ",
+
+  EA_ORACLE_IPHONE: "https://course.engauthority.com/a/2147508625/2xkVrGSJ",
+  EA_PAYPAL_IPHONE: "https://course.engauthority.com/a/2147508627/2xkVrGSJ",
+  EA_CK_IPHONE: "https://course.engauthority.com/a/2147508629/2xkVrGSJ",
 };
 
 // List of domains we could be on, one per course. We set it up so that
@@ -390,6 +394,16 @@ const FOMO_CONFIG = [
       CheckoutPages.EA_ORACLE_IPAD,
     )
   },
+  {
+    // Oracle iPhone
+    "pageRegex": /engauthority\..*iphone-13-pro\/oracle/i,
+    "toasts": makeCompanyPromoToasts(
+      "Oracle",
+      "free iPhone 13 Pro",
+      g_analytics.engauthority_oracle_iphone_sales,
+      CheckoutPages.EA_ORACLE_IPHONE,
+    )
+  },
 
   {
     // PayPal iPad
@@ -399,6 +413,16 @@ const FOMO_CONFIG = [
       "free, latest-gen iPad Pro",
       g_analytics.engauthority_paypal_ipad_sales,
       CheckoutPages.EA_PAYPAL_IPAD,
+    )
+  },
+  {
+    // PayPal iPhone
+    "pageRegex": /engauthority\..*iphone-13-pro\/paypal/i,
+    "toasts": makeCompanyPromoToasts(
+      "PayPal",
+      "free iPhone 13 Pro",
+      g_analytics.engauthority_paypal_iphone_sales,
+      CheckoutPages.EA_PAYPAL_IPHONE,
     )
   },
 
@@ -412,9 +436,20 @@ const FOMO_CONFIG = [
       CheckoutPages.EA_CK_IPAD,
     )
   },
+  {
+    // Credit Karma iPhone
+    "pageRegex": /engauthority\..*iphone-13-pro\/credit-karma/i,
+    "toasts": makeCompanyPromoToasts(
+      "Credit Karma",
+      "free iPhone 13 Pro",
+      g_analytics.engauthority_ck_iphone_sales,
+      CheckoutPages.EA_CK_IPHONE,
+    )
+  },
+
 
   {
-    // iPad promo
+    // Standard iPad promo
     "pageRegex": DomainRegexes.EA_IPAD,
     "toasts": makePromoToasts(
       g_analytics.engauthority_ipad_sales,
@@ -426,7 +461,7 @@ const FOMO_CONFIG = [
       "free, latest-gen iPad Pro",
     )
   },
-  // Oh and another one for the iPhone promo
+  // Oh and another one for the standard iPhone promo
   {
     // iPhone promo
     "pageRegex": DomainRegexes.EA_IPHONE,
