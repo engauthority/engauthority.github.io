@@ -394,6 +394,22 @@ const FOMO_CONFIG = [
     "https://course.engauthority.com/a/2147508700/2xkVrGSJ"),
 
 
+  /**
+   * Other companies go below:
+   */
+
+  // Microsoft 
+  makeCompanyIpadPromoConfig(
+    "microsoft", "Microsoft",
+    g_analytics.engauthority_microsoft_ipad_sales,
+    "https://course.engauthority.com/a/2147509140/2xkVrGSJ"),
+  makeCompanyIphonePromoConfig(
+    "microsoft", "Microsoft",
+    g_analytics.engauthority_microsoft_iphone_sales,
+    "https://course.engauthority.com/a/2147509141/2xkVrGSJ"),
+
+
+
   {
     // Standard iPad promo
     "pageRegex": DomainRegexes.EA_IPAD,
